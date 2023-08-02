@@ -10,7 +10,8 @@
     "build:watch": "vite build --watch",
     "preview": "npm run build && concurrently 'npm:build:watch' 'npm:_preview'",
     "_preview": "vite preview",
-    "pages": "gh-pages -d dist"
+    "pages": "gh-pages -d dist",
+    "deploy": "npm run build && npm run pages"
   },
   "dependencies": {
     "concurrently": "^8.2.0",

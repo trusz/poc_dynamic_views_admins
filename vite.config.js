@@ -18,8 +18,8 @@ export default defineConfig({
 		lib:{
 			entry: "src/main.jsx",
 			formats: ['es'],
-      name: "leads",
-			fileName: "leads", 
+      name: "admins",
+			fileName: "admins", 
 		}
 	},
   define: {

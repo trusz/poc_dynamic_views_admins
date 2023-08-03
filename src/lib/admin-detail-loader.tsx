@@ -10,7 +10,6 @@ export async function adminDetailLoader({ params }) {
     const employees = JSON.parse(empJSON) as Employee[]
     const admins = employees.filter(emp => emp.isAdmin)
     const admin = admins.find(emp => emp.id === adminId)
-    console.log({level:"dev", message:"adminDetailLoader", adminId, admin})
     
     return { admin };
     

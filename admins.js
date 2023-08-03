@@ -8670,14 +8670,11 @@ function Cv() {
 }
 function Rv(e) {
   const { admin: t } = ov();
-  return console.log({ level: "dev", message: "AdminDetail", admin: t }), /* @__PURE__ */ Me.jsx("div", { children: /* @__PURE__ */ Me.jsx("h3", { children: t.name }) });
+  return /* @__PURE__ */ Me.jsx("div", { children: /* @__PURE__ */ Me.jsx("h3", { children: t.name }) });
 }
 async function _v({ params: e }) {
   const { adminId: t } = e, n = window.localStorage.getItem("employees");
-  if (!n)
-    return;
-  const o = JSON.parse(n).filter((i) => i.isAdmin).find((i) => i.id === t);
-  return console.log({ level: "dev", message: "adminDetailLoader", adminId: t, admin: o }), { admin: o };
+  return n ? { admin: JSON.parse(n).filter((i) => i.isAdmin).find((i) => i.id === t) } : void 0;
 }
 function Pv(e, t, n) {
   const r = yv(

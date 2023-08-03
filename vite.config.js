@@ -16,7 +16,7 @@ export default defineConfig({
   build:{
     target: "es2020",
 		lib:{
-			entry: "src/main.jsx",
+			entry: "src/main.tsx",
 			formats: ['es'],
       name: "admins",
 			fileName: "admins", 
